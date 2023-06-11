@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { PrismaClient } from '@prisma/client';
 import AddContact from '@/components/AddContact';
+import Link from 'next/link';
 
 const prisma = new PrismaClient();
 
@@ -28,7 +29,7 @@ export default function Index({ initialContacts }) {
 
   return (
     <>
-	<AddContact/>
+	{/*<AddContact/>
      <div style={{display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center'}}>
     <div style={{margin:'50px',marginBottom:'20px'}}>Conatct List</div>
     {contacts.map((v)=>{
@@ -42,6 +43,14 @@ export default function Index({ initialContacts }) {
 		<button onClick={()=>{handleDelete(v?.id)}}>Delete</button>
 		</div>
 		</div>})}
+	  </div>*/}
+	  <div style={{display:"flex",flexDirection:'column',alignItems:'center',justifyContent:'center'}}>
+		<div>
+	  Hi - Click below to visit Dynamic Data Table
+		</div>
+	  <Link href="/datatable" legacyBehavior>
+	  <a>DataTable</a>
+	  </Link>
 	  </div>
     </>
   );

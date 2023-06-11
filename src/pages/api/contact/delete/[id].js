@@ -10,7 +10,7 @@ const Handler = async (req,res) => {
 	
 	  try {
 		const responseContact = await prisma.contact.delete({  where: {
-			id:id,
+			id:parseInt(id),
 		  }, });
 		res.status(200).json(responseContact);
 	  } catch (err) {
