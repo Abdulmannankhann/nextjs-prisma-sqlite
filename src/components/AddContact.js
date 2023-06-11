@@ -18,6 +18,7 @@ export default function AddContact(){
 		window.location.reload()
 	}
 	}
+	
 
 	return <div style={{display:'flex',flexDirection:'column',gap:'10px',margin:'20px',justifyItems:'center',alignItems:'center'}}>
 		<div>Basic Form</div>
