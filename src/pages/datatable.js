@@ -103,10 +103,10 @@ export default function DataTable({initialContacts}) {
   const handleClose = () => setOpen(false);
   
 const columns = [
-	{ field: 'id', headerName: 'Id', width: 240, editable: false },
-	{ field: 'firstName', headerName: 'First Name', width: 240, editable: true },
-	{ field: 'lastName', headerName: 'Last Name', width: 240, editable: true },
-	{ field: 'email', headerName: 'Email ID', width: 240, editable: true },
+	{ field: 'id', headerName: 'Id', width: 150, editable: false },
+	{ field: 'firstName', headerName: 'First Name', width: 150, editable: true },
+	{ field: 'lastName', headerName: 'Last Name', width: 150, editable: true },
+	{ field: 'email', headerName: 'Email ID', width: 150, editable: true },
 	{ field: 'avatar', headerName: 'Avatar Link', width: 400, editable: true },
 	{ field: 'age', headerName: 'Age', type: 'number', editable: true ,align:'right', width: 150},
 	{
